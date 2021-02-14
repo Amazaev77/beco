@@ -1,0 +1,81 @@
+.coupon
+    position: relative
+    width: 347px
+    height: 161px
+    margin: 0 20px 25px 0
+    padding: 0 0 16px 20px
+    background-color: #fff
+    border-radius: 9px
+    cursor: pointer
+    border: 1.8px solid #fff
+    -webkit-box-shadow: 0 2px 9px -5px rgba(34, 60, 80, 0.6)
+    -moz-box-shadow: 0 2px 9px -5px rgba(34, 60, 80, 0.6)
+    box-shadow: 0 2px 9px -5px rgba(34, 60, 80, 0.6)
+    box-sizing: border-box
+    &:last-child
+        align-self: flex-start
+    &:hover
+        border: 1.8px solid #df212d
+        transition: all 150ms
+    &:hover &__angle-left
+        border-top: 1.8px solid #df212d
+        border-right: 1.8px solid #df212d
+    &:hover &__angle-right
+        border-bottom: 1.8px solid #df212d
+        border-left: 1.8px solid #df212d
+    &__image
+        position: absolute
+        right: 0
+        height: 100%
+        border-radius: 8px
+    &__angle-left
+        transition: all 100ms
+        position: absolute
+        left: -5px
+        bottom: 76px
+        background: #fafafa
+        border-radius: 1.5px
+        transform: rotate(45deg)
+        width: 7px
+        height: 7px
+        border-top: 1.8px solid #fafafa
+        border-right: 1.8px solid #fafafa
+        box-shadow: -2px 2px 6px -5px #223c5099 inset
+        -moz-box-shadow: -2px 2px 6px -5px #223c5099 inset
+        -webkit-box-shadow: -2px 2px 6px -5px #223c5099 inset
+    &__angle-right
+        transition: all 100ms
+        position: absolute
+        right: -5.5px
+        bottom: 76px
+        background: #fafafa
+        border-radius: 1.5px
+        transform: rotate(45deg)
+        width: 7px
+        height: 7px
+        border-bottom: 1.8px solid #fafafa
+        border-left: 1.8px solid #fafafa
+        box-shadow: 2px -2px 6px -5px #223c5099 inset
+        -moz-box-shadow: 2px -2px 6px -5px #223c5099 inset
+        -webkit-box-shadow: 2px -2px 6px -5px #223c5099 inset
+    &__title
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 16px
+        margin: 16px 0 0
+    &__descr
+        font-size: 16px
+        opacity: 0.5
+        color: #000000
+        margin: 4px 0 0
+    &__red-text
+        margin-top: 32px
+        font-size: 35px
+        font-weight: 700
+        color: #DF212D
+    &__label
+        text-transform: uppercase
+        font-weight: 500
+        color: black
+        font-size: 16px
+        opacity: 0.5
